@@ -4,45 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/short-icon.PNG">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://kit.fontawesome.com/11a1459669.js" crossorigin="anonymous"></script>
     <!-- css external links-->
     <link rel="stylesheet" href="./src/css/header_footer.css">
     <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/index.css">
     <!-- google fonts -->
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
   
-    <title>ThueTro.com</title>
+    <title>Nhập môn công nghệ phần mềm</title>
 </head>
 <body>
     <header id="header">
-        <div class="header-login">
+       <div class="header-wrapper">
+            <div class="header-login">
                 <div class="logo">
-                    <img src="" alt="">
+                    <a href=""#>
+                        <img src="./assets/images/logo.PNG" alt="main logo">
+                    </a>
                 </div>
                 <div class="acc-wrapper">
-                    <div class="acc-login">
-                        <button>Login</button>
+                    <div class="acc-login acc-component">
+                        <button class="button">Login</button>
                     </div>
-                    <div class="acc-sign-up">
-                        <button>Sign up</button>
+                    <div class="acc-sign acc-component">
+                        <button class="button button--hl">Sign up</button>
                     </div>
-                    <div class="acc-search">
-                       <i class="fa-regular fa-magnifying-glass"></i>
+                    <div class="acc-search acc-component">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
         </div>
         <div class="header-nav">
-            
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Community</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Housing</a>
+                    </li>
+                </ul>
+                <div class="post">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>Đăng tin</span>
+                </div>
+            </nav>
         </div>
+       </div>
     </header>
     <div id="root">
-        <h1>Main content here</h1>
     </div>
     <footer>
-        Footer here
     </footer>
 </body>
 </html>

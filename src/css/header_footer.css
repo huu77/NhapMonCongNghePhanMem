@@ -1,0 +1,86 @@
+/* <============= Header Styles =============>  */
+#header {
+  width: 100%;
+  font-size: 1.5rem;
+}
+.header-wrapper {
+  
+}
+.header-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.acc-wrapper {
+  display: flex;
+}
+.acc-component {
+  cursor: pointer;
+  margin-left: 10px;
+}
+.acc-login {
+}
+.acc-sign-up {
+}
+.acc-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acc-search > i {
+  font-size: 1.8rem;
+}
+.header-nav {
+  background-color: var(--primary-color);
+}
+.navigation {
+    max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  
+}
+.nav-list {
+  display: flex;
+}
+.nav-item {
+    transition: all 0.2s ease-in-out;
+}
+.nav-item:hover{ 
+    background-color: var(--primary-color-lighter);
+}
+.nav-item:hover > .nav-link{
+    border-color: white;
+}
+.nav-item.active > .nav-link{
+   border-color: white;
+}
+.nav-link{
+    display:inline-block;
+    padding: 16px 12px;
+    color: white;
+    transition: all .2s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+.post {
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.post:hover{
+     background-color: var(--primary-color-lighter);
+
+}
+.post > i{
+    margin-right: 5px;
+    font-size: 1.8rem;
+}

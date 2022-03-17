@@ -1,0 +1,121 @@
+.filter-section{
+   font-size: 1.6rem;
+   color: white;
+   position: relative;
+}
+.filter-bg{
+    position: absolute;
+    inset: 0;
+    z-index:-1;
+    filter: brightness(60%);
+}
+.filter-bg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.filter-wrapper{
+    max-width: 1200px;
+    padding: 80px 0;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.filter-title{
+    padding: 75px 20px;
+}
+
+.filter-title > .title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.filter-title > .subtitle{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.filter-main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.filter-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 8;
+
+}
+.filter-button{
+        flex: 2;
+}
+.button--filter{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* custom select options */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: var(--primary-color);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+

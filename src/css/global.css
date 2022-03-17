@@ -39,6 +39,11 @@ a{
   text-decoration: none;
   color: inherit;
 }
+img{
+  display:block;
+  width: 100%;
+  object-fit:cover;
+}
 
 /* global styles */
 

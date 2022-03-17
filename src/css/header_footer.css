@@ -44,9 +44,6 @@
 .nav-item {
     transition: all 0.2s ease-in-out;
 }
-.nav-item:hover{ 
-    background-color: var(--primary-color-lighter);
-}
 .nav-item:hover > .nav-link{
     border-color: white;
 }
@@ -70,7 +67,7 @@
     transition: all .2s ease-in-out;
 }
 .post:hover{
-     background-color: var(--primary-color-lighter);
+     background-color: var(--primary-color-light);
 
 }
 .post > i{
@@ -78,64 +75,59 @@
     font-size: 1.8rem;
 }
 
-/* custom select options */
-.custom-select {
-  position: relative;
-  font-family: Arial;
+
+
+/* <============= Footer Styles =============>  */
+#footer{
+  font-size: 1.4rem;
+  padding: 60px 0;
+  border-top: 2px solid var(--primary-color);
+}
+.footer-wrapper{
+  max-width: 1200px;
+  margin:0 auto;
+}
+.footer-info{
+  display:flex; 
+  margin-bottom: 30px;
+} 
+.footer-sec{
+  flex: 1;
+  padding: 0 10px;
+}
+.footer-title{
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+.info-list{
+
+}
+.info-item{
+
+}
+.info-link{
+  transition: all .2s ease-in-out;
+}
+.info-link >i {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 5px 10px 0;
+  color: #097CEB;
+}
+.info-link:hover{
+  color: var(--primary-color);
+}
+.footer-contact{
+
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
-}
-
-.select-selected {
-  background-color: DodgerBlue;
-}
-
-/*style the arrow inside the select element:*/
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-}
-
-/*style items (options):*/
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
+.footer-license{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 2px solid var(--primary-color);
 }
 

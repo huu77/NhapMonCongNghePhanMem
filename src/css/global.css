@@ -37,6 +37,7 @@ ul{
 }
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 /* global styles */
@@ -44,8 +45,9 @@ a{
 *{
     /* them-color */
     --primary-color: #26BAC9;
-    --primary-color-darker: #19838e;
-    --primary-color-lighter: #68cbd6;
+    --primary-color-dark: #19838e;
+    --primary-color-light: #7fbcee;
+    --secondary-color: rgb(226, 236, 243);
     --max-width: 1200px;
 }
 .button{
@@ -76,8 +78,9 @@ a{
     border: 1px solid #19838e;
     background-color: #fff;
     outline: 0 none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .button.button--hl:hover{
-  background-color:var(--primary-color-darker);
+  background-color:var(--primary-color-dark);
 }
 

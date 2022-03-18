@@ -16,14 +16,17 @@
 }
 .filter-wrapper {
   max-width: 1200px;
-  padding: 100px 0;
+  padding: 100px 20px;
   margin: 0 auto;
   text-align: center;
+
 }
 .filter-title {
   padding: 0 25px 70px;
 }
-
+.filter-item{
+  margin: 10px;
+}
 .filter-title > .title {
   max-width: 70%;
   margin: 0 auto;
@@ -39,12 +42,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 .filter-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 8;
+  flex-wrap:wrap;
 }
 .filter-button {
   flex: 2;
@@ -127,7 +132,7 @@
 .main-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 0 50px 0;
+  padding: 20px 20px 50px 20px;
 }
 .main-breadcrumbs {
 }
@@ -149,10 +154,12 @@
 }
 .main-loca-list {
   display: flex;
+  flex-wrap:wrap;
 }
 .main-loca-item {
   margin: 0 40px;
   flex: 1;
+  min-width:200px;
 }
 .main-loca-item:hover {
   cursor: pointer;
@@ -198,6 +205,8 @@
 .main-post-title {
   margin-bottom: 10px;
   font-size: 2.3rem;
+  overflow: hidden;
+
 }
 .main-post-sort {
   margin-bottom: 20px;
@@ -248,7 +257,13 @@
 .post-title {
   font-size: 1.8rem;
   transition: all 0.2s ease-in-out;
+  overflow:hidden;
   margin-bottom: 10px;
+     text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; 
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
 }
 .post-title:hover {
   color: var(--primary-color);
@@ -266,16 +281,24 @@
 .post-area-value {
 }
 .post-location {
+ display: flex;
+ align-items: center;
 }
 .post-location > i{
   font-size: 2rem;
 }
 .post-location > span{
+  flex:1;
   margin-left: 6px;
 }
 .fa-map-location-dot {
 }
 .post-location-value {
+  max-width:400px;
+  display:inline-block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 .post-price {
   margin: 10px 0;
@@ -375,3 +398,28 @@
 .msa-img{
 
 }
+
+@media screen and (max-width: 980px) {
+  .main-sidebar{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-title > .title{
+    font-size: 3rem !important;
+  }
+  .filter-title > .subtitle{
+    font-size: 2rem !important;
+  }
+    .post-img{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-license{
+    justify-content: center;
+  }
+}
+

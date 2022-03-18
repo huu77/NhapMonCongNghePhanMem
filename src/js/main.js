@@ -76,3 +76,26 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+// FORM HANDLER ========================>
+
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+const loginForm = $('.form-login');
+const loginBtn = $('.btn-login');
+const loginCloseBtn = $('.btn-close');
+const loginOverlay = $('.overlay-login');
+const formLogin = $('.login .form');
+loginBtn.onclick = () => {
+    loginForm.classList.add('active');   
+}
+loginCloseBtn.onclick = (e) => {
+    loginForm.classList.remove('active');
+}
+loginOverlay.onclick = () => {
+    loginForm.classList.remove('active');
+}
+formLogin.onclick = (e) => {
+    e.stopPropagation();
+}

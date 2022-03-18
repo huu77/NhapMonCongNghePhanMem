@@ -18,7 +18,7 @@ for (i = 0; i < l; i++) {
         create a new DIV that will act as an option item:*/
         c = document.createElement("DIV");
         c.innerHTML = selElmnt.options[j].innerHTML;
-        c.addEventListener("click", function (e) {
+        c.addEventListener("click", function(e) {
             /*when an item is clicked, update the original select box,
             and the selected item:*/
             var y, i, k, s, h, sl, yl;
@@ -43,7 +43,7 @@ for (i = 0; i < l; i++) {
         b.appendChild(c);
     }
     x[i].appendChild(b);
-    a.addEventListener("click", function (e) {
+    a.addEventListener("click", function(e) {
         /*when the select box is clicked, close any other select boxes,
         and open/close the current select box:*/
         e.stopPropagation();
@@ -52,6 +52,7 @@ for (i = 0; i < l; i++) {
         this.classList.toggle("select-arrow-active");
     });
 }
+
 function closeAllSelect(elmnt) {
     /*a function that will close all select boxes in the document,
     except the current select box:*/
@@ -88,7 +89,7 @@ const loginCloseBtn = $('.btn-close');
 const loginOverlay = $('.overlay-login');
 const formLogin = $('.login .form');
 loginBtn.onclick = () => {
-    loginForm.classList.add('active');   
+    loginForm.classList.add('active');
 }
 loginCloseBtn.onclick = (e) => {
     loginForm.classList.remove('active');
@@ -97,5 +98,23 @@ loginOverlay.onclick = () => {
     loginForm.classList.remove('active');
 }
 formLogin.onclick = (e) => {
+        e.stopPropagation();
+    }
+    //FORM SIGN UP
+const signForm = $('.form-sign-up');
+const signBtn = $('.button--hl');
+const signCloseBtn = $('.btn-close');
+const signOverlay = $('.overlay-sign');
+const formSign = $('.sign .form');
+signBtn.onclick = () => {
+    signForm.classList.add('active');
+}
+signCloseBtn.onclick = (e) => {
+    signForm.classList.remove('active');
+}
+signOverlay.onclick = () => {
+    signForm.classList.remove('active');
+}
+formSign.onclick = (e) => {
     e.stopPropagation();
 }

@@ -415,6 +415,9 @@
     .post-img{
     display:none;
   }
+  .info-item{
+    text-align:center;
+  }
 }
 
 @media screen and (max-width: 680px) {

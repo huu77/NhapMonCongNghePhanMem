@@ -691,3 +691,37 @@
     padding: 8px 0;
     border-radius: 30px;
 }
+/* Go to top */
+.gototop{
+    display:block;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 40px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    background: var(--primary-color);
+}
+.gototop:hover{
+    background: white;
+}
+.gototop:hover > i{
+    color: var(--primary-color);
+}
+.gototop > i{
+    color: white;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+}
+.gototop:active{
+    background: aquamarine;
+}
+.gototop.hide{
+    display:none;
+}

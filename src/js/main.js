@@ -117,3 +117,28 @@ signOverlay.onclick = () => {
 formSign.onclick = (e) => {
     e.stopPropagation();
 }
+// gototop && header sticky handler
+const gototop = $('.gototop');
+const headerTopHeight = $('.header-login').offsetHeight;
+const headerNav = $('.header-nav');
+const headerNavHeight = headerNav.offsetHeight;
+const headerLogin = $('.header-login');
+
+document.onscroll = function () {
+    if (window.scrollY > 400) {
+          gototop.classList.remove('hide');
+    } else {
+        gototop.classList.add('hide');
+    }
+
+    if (window.scrollY > headerTopHeight) {
+        headerNav.classList.add('fixed');
+        headerLogin.style.marginBottom = `${headerNavHeight}px`;
+    } else {
+        headerNav.classList.remove('fixed');
+        headerLogin.style.marginBottom = '0px';
+    }
+    
+}
+
+

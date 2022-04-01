@@ -106,12 +106,6 @@
   margin-bottom: 10px;
 
 }
-.info-list{
-
-}
-.info-item{
-
-}
 .info-link{
   transition: all .2s ease-in-out;
 }
@@ -124,10 +118,6 @@
 .info-link:hover{
   color: var(--primary-color);
 }
-.footer-contact{
-
-}
-
 .footer-license{
   display:flex;
   justify-content: space-between;

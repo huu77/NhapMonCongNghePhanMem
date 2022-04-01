@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/short-icon.PNG">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/11a1459669.js" crossorigin="anonymous"></script>
+    <!-- css external links-->
+    <link rel="stylesheet" href="../src/css/header_footer.css">
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="../src/css/detail.css">
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+    <title>Detail Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-wrapper">
+            <div class="header-login">
+                <div class="logo">
+                    <a href="" #>
+                        <img src="../assets/images/logo.PNG" alt="main logo">
+                    </a>
+                </div>
+                <div class="acc-wrapper">
+                    <div class="acc-login acc-component">
+                        <button class="button btn-login">Đăng nhập</button>
+                    </div>
+                    <div class="acc-sign acc-component">
+                        <button class="button button--hl">Đăng ký</button>
+                    </div>
+                    <div class="acc-search acc-component">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Khám phá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cộng đồng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hướng dẫn</a>
+                        </li>
+                    </ul>
+                    <div class="post">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Đăng tin</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="root">
+        <!-- FORM - LOGIN -->
+        <div class="form-login ">
+            <div class="overlay-login">
+                <div class="login active">
+                    <div class="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="form">
+                        <h2>Đăng nhập</h2>
+                        <input type="text" placeholder="Tên đăng nhập">
+                        <input type="password" placeholder="Mật khẩu">
+                        <div class="login-sub-option">
+                            <a href="#">Quên mật khẩu?</a>
+                            <a href="#">Tạo tài khoản mới!</a>
+                        </div>
+                        <button class="button button--submit active">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FORM - SIGN UP -->
+        <div class="form-sign-up ">
+            <div class="overlay-sign">
+                <div class="sign active">
+                    <div class="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="form">
+                        <h2>Đăng Kí</h2>
+                        <input type="text" placeholder="Tên tài khoản">
+                        <input type="text" value="exam@gmail.com" placeholder="Email của bạn">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confrim Password">
+                        <button class="button button--submit active">Đăng Kí</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <main class="main">
+            <div class="main-wrapper">
+                <div class="main-breadcrumbs">
+                    <a href="../index.html" class="mb-home">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    /
+                    <a href="#" class="mb-detail">
+                        <span>Chi tiết bài đăng</span>
+                    </a>
+                </div>
+                <div class="main-content">
+                    <div class="left-content">
+                        <div class="detail-container">
+                            <div class="detail-post">
+                                <div class="dp-view">
+                                    <ul class="dp-list">
+                                        <li class="dp-item">
+                                            <img src="https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2022/03/28/hhh_1648436654.jpg"
+                                                alt="">
+                                        </li>
+                                        <li class="dp-item">
+                                            <img src="https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2022/03/28/ggg_1648436654.jpg"
+                                                alt="">
+                                        </li>
+                                        <li class="dp-item">
+                                            <img src="https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2022/03/28/hhhhh_1648436654.jpg"
+                                                alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dp-control">
+                                    <div class="dp-left disable">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </div>
+                                    <div class="dp-right ">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-info">
+                                <h2 class="di-title">
+                                    Cho thuê phòng trọ mới sạch đẹp tại Địa chỉ: 576 Nguyễn Oanh, Phường 6, Quận Gò Vấp.
+                                    Chỉ từ 2,8 Triệu/tháng
+                                </h2>
+                                <div class="di-essential">
+                                    <div class="die-price">
+                                        <i class="fa-solid fa-sack-dollar"></i>
+                                        <div class="die-value">
+                                            2.8 triệu/tháng
+                                        </div>
+                                    </div>
+                                    <div class="die-area">
+                                        <i class="fa-solid fa-chart-area"></i>
+                                        <div class="die-value">
+                                            Diện tích: 25m2
+                                        </div>
+                                    </div>
+                                    <div class="die-address">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div class="die-value">
+                                            Địa chỉ: 576 Đường Nguyễn Oanh, Phường 6, Quận Gò Vấp, Hồ Chí Minh
+                                        </div>
+                                    </div>
+                                    <div class="die-time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <div class="die-value">
+                                            Ngày đăng: 12 giờ ngày 1 tháng 4 năm 2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="di-description">
+                                    <h3 class="did-title">
+                                        Thông tin mô tả
+                                    </h3>
+                                    <span>
+                                        Cho thuê phòng trọ mới sạch đẹp tại Địa chỉ: 576 Nguyễn Oanh, Phường 6, Quận Gò
+                                        Vấp.<br>
+                                        Phòng mới đẹp có sẵn đầy đủ nội thất: Giường, tủ lạnh, tủ đồ,.<br>Còn phòng
+                                        trống,có thể vào ở ngay.<br>
+                                        Diện tích phòng 25m2; Giá thuê chỉ từ 2,8 Triệu/tháng.<br>
+                                        Ngay trung tâm Quận Gò Vấp nên xung quanh nhiều tiện ích, Thuận tiện kết nối
+                                        giao thông qua nhiều khu vực Quận trung tâm.<br>
+                                        Sinh hoạt tự do, thoải mái, Khu trọ an ninh, yên tĩnh.<br>
+                                        Liên hệ: 0938.743.288 (Hưng)
+                                    </span>
+                                </div>
+                                <div class="di-report">
+                                    <i class="fa-solid fa-flag"></i>
+                                    <span>Báo cáo bài viêt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-post">
+                            <h3 class="main-post-title">Tin liên quan
+                            </h3>
+                            <div class="main-post-sort">
+                                <span>Sắp xếp:</span>
+                                <button class="button active">Mặc định</button>
+                                <button class="button">Mới nhất</button>
+                                <button class="button">Có video</button>
+                            </div>
+                            <ul class="post-list">
+                                <li class="post-item">
+                                    <div class="post-img">
+                                        <a href="#">
+                                            <img src="../assets/images/Tro1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#" class="post-title">
+                                            Cho thuê phòng trọ dạng chung cư gần khu công nghệ cao Thủ Đức
+                                        </a>
+                                        <div class="post-area">
+                                            <i class="fa-solid fa-chart-area"></i>
+                                            <span class="post-area-value">18 m²</span>
+                                        </div>
+                                        <div class="post-location">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <span class="post-location-value">
+                                                Thành phố Thủ Đức - Thành phố HCM
+                                            </span>
+                                        </div>
+                                        <div class="post-price">
+                                            <span class="post-price-value">3 triệu / tháng</span>
+                                        </div>
+                                        <div class="post-lessor">
+                                            <a href="#">
+                                                <div class="pl-info">
+                                                    <div class="pl-img">
+                                                        <img src="../assets/images/lessor.jpg" alt="">
+                                                    </div>
+                                                    <span>Văn Châu</span>
+                                                </div>
+                                            </a>
+                                            <button class="button">Gọi 09999999</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="post-item">
+                                    <div class="post-img">
+                                        <a href="#">
+                                            <img src="../assets/images/Tro1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#" class="post-title">
+                                            Cho thuê phòng trọ dạng chung cư gần khu công nghệ cao Thủ Đức
+                                        </a>
+                                        <div class="post-area">
+                                            <i class="fa-solid fa-chart-area"></i>
+                                            <span class="post-area-value">18 m²</span>
+                                        </div>
+                                        <div class="post-location">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <span class="post-location-value">
+                                                Thành phố Thủ Đức - Thành phố HCM
+                                            </span>
+                                        </div>
+                                        <div class="post-price">
+                                            <span class="post-price-value">3 triệu / tháng</span>
+                                        </div>
+                                        <div class="post-lessor">
+                                            <a href="#">
+                                                <div class="pl-info">
+                                                    <div class="pl-img">
+                                                        <img src="../assets/images/lessor.jpg" alt="">
+                                                    </div>
+                                                    <span>Văn Châu</span>
+                                                </div>
+                                            </a>
+                                            <button class="button">Gọi 0999999999</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="post-item">
+                                    <div class="post-img">
+                                        <a href="#">
+                                            <img src="../assets/images/Tro1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#" class="post-title">
+                                            Cho thuê phòng trọ dạng chung cư gần khu công nghệ cao Thủ Đức
+                                        </a>
+                                        <div class="post-area">
+                                            <i class="fa-solid fa-chart-area"></i>
+                                            <span class="post-area-value">18 m²</span>
+                                        </div>
+                                        <div class="post-location">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <span class="post-location-value">
+                                                Thành phố Thủ Đức - Thành phố HCM
+                                            </span>
+                                        </div>
+                                        <div class="post-price">
+                                            <span class="post-price-value">3 triệu / tháng</span>
+                                        </div>
+                                        <div class="post-lessor">
+                                            <a href="#">
+                                                <div class="pl-info">
+                                                    <div class="pl-img">
+                                                        <img src="../assets/images/lessor.jpg" alt="">
+                                                    </div>
+                                                    <span>Văn Châu</span>
+                                                </div>
+                                            </a>
+                                            <button class="button">Gọi 0999999999</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="post-item">
+                                    <div class="post-img">
+                                        <a href="#">
+                                            <img src="../assets/images/Tro1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="post-content">
+                                        <a href="#" class="post-title">
+                                            Cho thuê phòng trọ dạng chung cư gần khu công nghệ cao Thủ Đức
+                                        </a>
+                                        <div class="post-area">
+                                            <i class="fa-solid fa-chart-area"></i>
+                                            <span class="post-area-value">18 m²</span>
+                                        </div>
+                                        <div class="post-location">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <span class="post-location-value">
+                                                Thành phố Thủ Đức - Thành phố HCM
+                                            </span>
+                                        </div>
+                                        <div class="post-price">
+                                            <span class="post-price-value">3 triệu / tháng</span>
+                                        </div>
+                                        <div class="post-lessor">
+                                            <a href="#">
+                                                <div class="pl-info">
+                                                    <div class="pl-img">
+                                                        <img src="../assets/images/lessor.jpg" alt="">
+                                                    </div>
+                                                    <span>Văn Châu</span>
+                                                </div>
+                                            </a>
+                                            <button class="button">Gọi 0999999999</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="main-sidebar">
+                            <div class="ms-section owner-post">
+                                <div class="op-avatar">
+                                    <img src="https://i.pinimg.com/736x/82/70/fa/8270fae617816e520e79857932ef2394.jpg" alt="">
+                                </div>
+                                <h3 class="op-name">Meo Dai Ca</h3>
+                                <a href="tel:+0938-743-288" class="btn-phone-link">
+                                    <div class="button btn-phone">
+                                   <i class="fa-solid fa-mobile-screen-button"></i>
+                                    0938.743.288
+                                </div>
+                                </a>
+                                <a target="_blank" href="https://zalo.me/0938743288" class="btn-zalo-link">
+                                    <div class="button btn-zalo">
+                                    <i class="fa-solid fa-z"></i>
+                                    Nhắn zalo
+                                </div>
+                                </a>
+                            </div>
+                            <div class="ms-section ms-category">
+                                <h3 class="ms-title">Danh mục cho thuê</h3>
+                                <div class="ms-content">
+                                    <ul class="msc-list">
+                                        <li class="msc-item">
+                                            <a href="#" class="msc-link">Cho thuê phòng trọ</a>
+                                        </li>
+                                        <li class="msc-item">
+                                            <a href="#" class="msc-link">Cho thuê nhà nguyên căn</a>
+                                        </li>
+                                        <li class="msc-item">
+                                            <a href="#" class="msc-link">Cho thuê căn hộ</a>
+                                        </li>
+                                        <li class="msc-item">
+                                            <a href="#" class="msc-link">Cho thuê mặt bằng</a>
+                                        </li>
+                                        <li class="msc-item">
+                                            <a href="#" class="msc-link">Tìm người ở ghép</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ms-advertisement">
+                                <div class="msa-img">
+                                    <img src="https://images.wallpaperscraft.com/image/single/bmw_vision_efficientdynamics_concept_front_view_97571_1280x1280.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="footer-info">
+                <div class="footer-sec">
+                    <h4 class="footer-title">Thuê phòng trọ</h4>
+                    <span style="display:block;margin-bottom: 10px">Website cho thuê phòng trọ, nhà trọ nhanh chóng và
+                        hiệu quả</span>
+                    <div class="footer-contact">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>HotLine: 0999999999</span>
+                    </div>
+                    <div class="footer-contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email: vanchau@gmail.com</span>
+                    </div>
+                </div>
+                <div class="footer-sec">
+                    <h4 class="footer-title">Thông tin</h4>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <a href="#" class="info-link">Giới thiệu</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Blog</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Chính sách bảo mật</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Quy định sử dụng</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Quy chế bảo mật</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-sec">
+                    <h4 class="footer-title">Hướng dẫn</h4>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <a href="#" class="info-link">Hướng dẫn đăng tin</a>
+                        </li>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Quy địng đăng tin</a>
+                        </li>
+                        <li class="info-item">
+                            <a href="#" class="info-link">Liên hệ hỗ trợ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-sec">
+                    <h4 class="footer-title">Kết nối với chúng tôi</h4>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <a target="_blank" href="https://www.facebook.com/chaaubau16" class="info-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Văn Châu</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a target="_blank" href="https://www.facebook.com/leuleeu123" class="info-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Đức Mạnh</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a target="_blank" href="https://www.facebook.com/QuanVu.SKT" class="info-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Hiếu Thắng</span>
+                            </a>
+                        </li>
+                        <li class="info-item">
+                            <a target="_blank" href="https://www.facebook.com/huu.nguyenthanh.9275" class="info-link">
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>Nguyễn Hữu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-license">
+                <div class="f-logo">
+                    <a href="#"><img src="../assets/images/logo.PNG" alt=""></a>
+                </div>
+                <div class="f-license">
+                    © 2022 ThueTro.com, All rights Reserved Terms and conditions
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/detail.js"></script>
+</body>
+
+</html>

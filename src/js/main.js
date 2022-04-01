@@ -80,7 +80,6 @@ document.addEventListener("click", closeAllSelect);
 
 
 // FORM HANDLER ========================>
-
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 const loginForm = $('.form-login');

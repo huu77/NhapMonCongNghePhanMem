@@ -135,5 +135,15 @@
   flex-wrap:wrap;
   gap:10px;
 }
+.f-logo > a > img{
+  max-width: 160px;
+  max-height: 80px;
+}
+
+.logo > a >img{
+  max-width: 195px;
+  max-height: 53px;
+  object-fit: cover;
+}
 
 

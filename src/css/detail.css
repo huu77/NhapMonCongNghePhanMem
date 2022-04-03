@@ -177,3 +177,23 @@
 .button.btn-zalo{
 
 }
+@media screen and (max-width: 1050px) {
+    .dp-view{
+        height: 340px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dp-view{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .dp-view{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .dp-view{
+        height: 200px;
+    }
+}
